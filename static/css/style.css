@@ -1,0 +1,27 @@
+* {
+    font: 14px sans-serif;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    width: 180px;
+    height: 45px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+  .bubbles {
+    stroke-width: 1px;
+    stroke: black;
+    opacity: .8
+  }
+  .bubbles:hover {
+    stroke: black;
+  }
+  .legend {
+    font-size: 48px;
+  }

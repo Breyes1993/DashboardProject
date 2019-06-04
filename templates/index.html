@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Data Visualization Team Project</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <!-- <link rel="stylesheet" href="/static/css/d3Style.css"> -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1 style="text-align:center">5 Top Causes of Death per 100K 1900 - 2015</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-lg-12">
+        <div>
+          <form>
+            <input type="radio" name="chartType" value="grouped" checked> Grouped<br>
+            <input type="radio" name="chartType" value="stacked"> Stacked<br>
+          </form>
+        </div>
+        <div id="stackedChart">
+          <!-- Bar chart space-->
+        </div>
+      </div>
+    </div>
+    <row>
+      <div id="my_dataviz">
+        <!-- Bubble chart space-->
+      </div>
+    </row>
+    <div style="margin-top:100px !important">
+        <h1 style="text-align:center">Year by Year Detail</h1>
+    </div>
+    <div class="row" style="margin-top:50px !important">
+      
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Select Year:</h5>
+          <select id="selDataset" onchange="optionChanged()"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading"></div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div id="pie">
+          <!-- Pie chart space-->
+        </div>
+      </div>
+      <!-- <div class="col-md-5">
+        <div id="gauge"></div>
+      </div> -->
+    </div> 
+  </div>
+
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/d3-color.v1.min.js"></script>
+  <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+  <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+
+  <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+
+
+  <script type="text/javascript" src="../static/js/bar.js"></script>
+  <script type="text/javascript" src="../static/js/bubble.js"></script>
+
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <script type="text/javascript" src="../static/js/pie.js"></script>
+
+
+  
+
+</body>
+
+</html>
