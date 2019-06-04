@@ -15,7 +15,8 @@ var svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("./static/data/CDC_10yr_avg.csv", function(data) {
+  d3.json("/get10YearData", data => {
+
   console.log(data)
   // Add Title to chart
   svg.append("text")
